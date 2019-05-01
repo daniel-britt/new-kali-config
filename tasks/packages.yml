@@ -6,7 +6,8 @@
     packages:
 
     - htop
-    - mc
+    - nmap
+    - netdiscover
     - tmux
     - gobuster
     - seclists
