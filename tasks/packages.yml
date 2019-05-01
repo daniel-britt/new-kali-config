@@ -8,6 +8,10 @@
     - htop
     - nmap
     - netdiscover
+    - python3-pip
+    - python-dev
+    - libssl-dev
+    - libffi-dev
     - tmux
     - gobuster
     - seclists
