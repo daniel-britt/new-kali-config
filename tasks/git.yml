@@ -1,0 +1,3 @@
+- git:
+    repo: https://github.com/codingo/Reconnoitre.git
+    dest: {{ lookup('env','HOME') }}
