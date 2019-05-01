@@ -1,3 +1,9 @@
 - git:
     repo: https://github.com/codingo/Reconnoitre
-    dest: /tmp
+    dest: /home/Reconnoitre
+- git:
+    repo: https://github.com/danielmiessler/SecLists
+    dest: /home/SecLists
+- git:
+    repo: https://github.com/SpiderLabs/Responder
+    dest: /home/Responder

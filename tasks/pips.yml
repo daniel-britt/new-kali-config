@@ -1,4 +1,4 @@
 - pip:
-    name: docker, numpy, pandas, jupyterlab
+    name: pip, virtualenv, docker, numpy, pandas, jupyterlab
     state: latest
 

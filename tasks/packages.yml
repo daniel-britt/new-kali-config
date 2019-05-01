@@ -1,8 +1,13 @@
 - name: Install packages
-  apt: name={{item}}
-  with_items:
+  ignore_errors: yes
+  apt:
+    name: "{{ packages }}"
+  vars:
+    packages:
+
     - htop
     - mc
     - tmux
     - gobuster
     - seclists
+    - crackmapexec
