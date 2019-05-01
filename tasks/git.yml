@@ -1,9 +1,12 @@
-- git:
+- name: Download Reconnoitre
+  git:
     repo: https://github.com/codingo/Reconnoitre
     dest: /home/Reconnoitre
-- git:
+- name: Download SecLists 
+  git:
     repo: https://github.com/danielmiessler/SecLists
     dest: /home/SecLists
-- git:
+- name: Download Responder
+  git:
     repo: https://github.com/SpiderLabs/Responder
     dest: /home/Responder
