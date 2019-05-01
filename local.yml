@@ -8,4 +8,4 @@
   tasks:
     - include: tasks/packages.yml
     - include: tasks/pips.yml
-
+    - include: tasks/git.yml
