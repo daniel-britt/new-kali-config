@@ -1,4 +1,14 @@
-- pip:
-    name: pip, virtualenv, docker, numpy, pandas, jupyterlab
+- name: Install pip packages
+  ignore_errors: yes
+  pip:
+    name: "{{ packages }}"
     state: latest
+  vars:
+    packages:
 
+    - pip
+    - virtualenv
+    - docker
+    - numpy
+    - pandas
+    - jupyterlab
