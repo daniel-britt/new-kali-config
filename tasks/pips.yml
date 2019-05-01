@@ -1,4 +1,4 @@
-- name: Force update pip
+- name: Force pip update
   pip:
     name: pip
     state: latest
