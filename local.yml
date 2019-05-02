@@ -5,9 +5,8 @@
       apt: 
         update_cache: yes
         cache_valid_time: 3600
-        upgrade: dist
+        upgrade: yes
         autoremove: yes
-      changed_when: False
 
   tasks:
     - include: tasks/os_family_check.yml
