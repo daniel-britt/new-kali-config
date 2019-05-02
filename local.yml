@@ -1,16 +1,6 @@
 - hosts: localhost
   become: true
-  pre_tasks:
-    - name: update repositories
-      when: ansible_facts['os_family'] == "Ubuntu"
-      apt: 
-        update_cache: yes
-    - name: upgrade repositories
-      apt:
-        name: "*" 
-        state: latest
-        force_apt_get: yes
-
+  
   tasks:
     - include: tasks/os_family_check.yml
     - include: tasks/packages.yml
