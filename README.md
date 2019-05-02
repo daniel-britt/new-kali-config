@@ -1,2 +1,3 @@
 # ansible
-For all things related to host configuration.
+
+pip install ansible; ansible-pull -U https://github.com/daniel-britt/ansible
