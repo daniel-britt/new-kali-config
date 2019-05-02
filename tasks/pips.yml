@@ -1,5 +1,5 @@
 - name: Installing and updating pip packages
   ignore_errors: yes
   pip:
-    name: virtualenv, docker, numpy, pandas, jupyterlab, pip
+    name: virtualenv, docker, numpy, pandas, jupyterlab
     state: latest
