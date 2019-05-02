@@ -6,14 +6,11 @@
         update_cache: yes
         cache_valid_time: 3600
         upgrade: dist
+        autoremove: yes
       changed_when: False
-    - name: Checking for Kali packages, adding repo if missing
-      apt_repository:
-        repo: deb http://http.kali.org/kali kali-rolling main non-free contrib
-        state: present
-      when: when: ansible_facts['os_family'] != "Kali"
 
   tasks:
+    - include: tasks/os_family_check.yml
     - include: tasks/packages.yml
     - include: tasks/pips.yml
     - include: tasks/git.yml
