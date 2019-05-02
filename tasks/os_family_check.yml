@@ -1,0 +1,19 @@
+    - name: Check for Kali packages, adding repo if missing
+      when: ansible_facts['os_family'] != "Kali"
+      apt_repository:
+        repo: deb http://http.kali.org/kali kali-rolling main non-free contrib
+        state: present
+    - name: Add Kali Apt signing key
+      when: ansible_facts['os_family'] != "Kali"
+      apt_key:
+        id: 7D8D0BF6
+        url: https://www.kali.org/archive-key.asc
+        state: present
+    - name: Update repositories
+      become: true
+      when: ansible_facts['os_family'] != "Kali"
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+      changed_when: False
+
