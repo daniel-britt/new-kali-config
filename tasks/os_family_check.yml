@@ -9,9 +9,3 @@
       apt_repository:
         repo: deb http://http.kali.org/kali kali-rolling main non-free contrib
         state: present
-    - name: Update repositories
-      become: true
-      when: ansible_facts['os_family'] != "Kali"
-      apt:
-        update_cache: yes
-      changed_when: False 
