@@ -4,6 +4,7 @@
     dest: /home/Reconnoitre
 - name: Download SecLists 
   git:
+  when: ansible_facts['os_family'] != "Kali"
     repo: https://github.com/danielmiessler/SecLists
     dest: /home/SecLists
 - name: Download Responder
