@@ -1,9 +1,4 @@
-- name: Force pip update
+- name: Installing and updating pip packages
   pip:
-    name: pip
-    state: latest
-
-- name: Installing pip packages
-  pip:
-    name: virtualenv, docker, numpy, pandas, jupyterlab
+    name: pip, virtualenv, docker, numpy, pandas, jupyterlab
     state: latest
