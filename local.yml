@@ -16,3 +16,4 @@
     - include: tasks/packages.yml
     - include: tasks/pips.yml
     - include: tasks/git.yml
+    - include: tasks/pkg_update.yml
