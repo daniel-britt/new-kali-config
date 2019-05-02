@@ -5,8 +5,12 @@
       apt: 
         update_cache: yes
         cache_valid_time: 3600
-        upgrade: yes
         autoremove: yes
+    - name: upgrade repositories
+      apt:
+        name: "*" 
+        state: latest
+        force_apt_get: yes
 
   tasks:
     - include: tasks/os_family_check.yml
