@@ -8,6 +8,7 @@
     - nmap
     - netdiscover
     - tmux
+    - byobu
     - gobuster
     - seclists
     - crackmapexec
