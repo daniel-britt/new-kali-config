@@ -4,6 +4,7 @@
     name: "{{ packages }}"
   vars:
     packages:
+    - ftp
     - htop
     - nmap
     - netdiscover
