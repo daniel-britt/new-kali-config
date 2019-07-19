@@ -13,3 +13,5 @@
     - gobuster
     - seclists
     - crackmapexec
+    - cifs-utils
+    - libguestfs-tools
