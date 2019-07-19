@@ -2,7 +2,7 @@
   become: true
   
   tasks:
-    - include: tasks/os_family_check.yml
+    #- include: tasks/os_family_check.yml
     - include: tasks/packages.yml
     - include: tasks/pips.yml
     - include: tasks/git.yml
